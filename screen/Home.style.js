@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
@@ -13,16 +13,20 @@ export const styles = StyleSheet.create({
     },
     textToTranslate: {
         height: 100,
-        fontSize: 20
+        fontSize: 20,
     },
     dropDownPicker: {
-        marginBottom: 20
+        marginBottom: 20,
     },
     resultText: {
         height: 100,
-        fontSize: 20
+        fontSize: 20,
     },
     footer: {
-        marginTop: 50
-    }
+        marginTop: 50,
+    },
+    mainContent: {
+        marginLeft: 20,
+        marginRight: 20
+    },
 });

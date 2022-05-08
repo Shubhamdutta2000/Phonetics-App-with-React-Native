@@ -36,10 +36,10 @@ export default function Home() {
                 Phonetics App
             </Text>
             <Text style={styles.para}>
-                Type in English and select particular language to translate and Press
-                Translate Button below to Get in specific language
+                Type in English and select a particular language and Press
+                Translate Button below to Get result text in specific language
             </Text>
-            <View>
+            <View style={styles.mainContent}>
                 <TextInput
                     style={styles.textToTranslate}
                     placeholder="Type here to translate!"

@@ -1,9 +1,10 @@
 # Phonetics-App-with-React-Native
+
 Type in English and select particular language to Get result text in specific language
 
 <br />
 
-# How To Use 
+# How To Use
 
 ```
 # Install dependencies
@@ -31,7 +32,6 @@ react-native run-android
 
 # App Demo
 
-![AppDemo](https://user-images.githubusercontent.com/62681943/167309307-5188c0c9-f96c-4699-b547-199760d1f449.jpg)
+![AppDemo](https://user-images.githubusercontent.com/62681943/167309651-48b93457-2823-445f-8d4a-8169e145c878.jpg)
 
 <br />
-
