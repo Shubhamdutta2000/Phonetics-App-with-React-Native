@@ -13,8 +13,8 @@ export const translateAction = (from, to, text) => async dispatch => {
         dispatch({
             type: GET_TRANSLATE_LANGUAGE_SUCCESS,
             payload: {
-                from: from,
-                to: to,
+                fromLanguage: from,
+                toLanguage: to,
                 text: text,
                 resultText: resultText
             }

@@ -10,8 +10,13 @@ import {
 import DropDownPicker from 'react-native-dropdown-picker';
 import HomeLogic from './home.logic';
 
+/**
+ * 
+ * @returns render Home Screen to the app
+ */
 export default function Home() {
     const {
+        data,
         error,
         loading,
         text,
