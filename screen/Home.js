@@ -36,8 +36,14 @@ export default function Home() {
                 Phonetics App
             </Text>
             <Text style={styles.para}>
+                Transliteration: It is machine transliteration software as service enable you to type in spicific language from English keyboard.
+            </Text>
+            <Text style={styles.para}>
+                How It Helps?: You can copy from here and paste it on Facebook, WhatsApp, twitter, blogs, comment section at any site.
+            </Text>
+            <Text style={styles.para}>
                 Type in English and select a particular language and Press
-                Translate Button below to Get result text in specific language
+                Transliteration Button below to Get result text in specific language.
             </Text>
             <View style={styles.mainContent}>
                 <TextInput

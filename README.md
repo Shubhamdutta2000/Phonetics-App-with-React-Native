@@ -34,6 +34,6 @@ react-native run-android
 
 # App Demo
 
-![AppDemo](https://user-images.githubusercontent.com/62681943/167309651-48b93457-2823-445f-8d4a-8169e145c878.jpg)
+![AppDemo](https://user-images.githubusercontent.com/62681943/167314604-fa1475b9-0199-45df-a2db-ac1931991fd6.jpg)
 
 <br />
