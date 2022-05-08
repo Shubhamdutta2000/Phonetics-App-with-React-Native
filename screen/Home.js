@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    StyleSheet,
     View,
     StatusBar,
     TextInput,
@@ -8,15 +7,15 @@ import {
     Button,
 } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
-import HomeLogic from './home.logic';
+import HomeLogic from './Home.logic';
+import { styles } from './Home.style';
 
 /**
- * 
+ *
  * @returns render Home Screen to the app
  */
 export default function Home() {
     const {
-        data,
         error,
         loading,
         text,
@@ -36,16 +35,20 @@ export default function Home() {
             <Text style={{ fontWeight: 'bold', fontSize: 30, marginTop: 40 }}>
                 Phonetics App
             </Text>
+            <Text style={styles.para}>
+                Type in English and select particular language to translate and Press
+                Translate Button below to Get in specific language
+            </Text>
             <View>
                 <TextInput
-                    style={{ height: 140, fontSize: 20 }}
+                    style={styles.textToTranslate}
                     placeholder="Type here to translate!"
                     onChangeText={newText => setText(newText)}
                     defaultValue={text}
                 />
                 <DropDownPicker
                     placeholder="Select Language"
-                    style={{ marginBottom: 20 }}
+                    style={styles.dropDownPicker}
                     open={open}
                     value={langSelected}
                     items={langs}
@@ -56,21 +59,17 @@ export default function Home() {
                 <Button onPress={() => translate()} title="Translate" color="#3cb66f" />
 
                 <TextInput
-                    style={{ height: 100, fontSize: 20 }}
+                    style={styles.resultText}
                     placeholder="Get Translation here..."
                     value={loading ? 'Loading...' : error ? error.message : res}
                     defaultValue={text}
                 />
             </View>
             <StatusBar style="auto" />
+            <Text style={styles.footer} >
+                Copyright © 2022 by Shubham Dutta
+            </Text>
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor: '#2d5b4f',
-    },
-});

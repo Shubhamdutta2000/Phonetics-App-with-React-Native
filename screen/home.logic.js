@@ -34,7 +34,6 @@ export default HomeLogic = () => {
     }
 
     return {
-        data,
         error,
         loading,
         text,
