@@ -56,7 +56,7 @@ export default function Home() {
                     setValue={setLangSelected}
                     setItems={setLangs}
                 />
-                <Button onPress={() => translate()} title="Translate" color="#3cb66f" />
+                <Button onPress={() => translate()} title="Transliteration" color="#3cb66f" />
 
                 <TextInput
                     style={styles.resultText}

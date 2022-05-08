@@ -1,6 +1,8 @@
 # Phonetics-App-with-React-Native
 
-Type in English and select particular language to Get result text in specific language
+> Type in English and select particular language and do Transliteration\* to Get result text in specific language
+
+> **_Transliteration_**: It is machine transliteration software as service enable you to type in spicific language from English keyboard.
 
 <br />
 

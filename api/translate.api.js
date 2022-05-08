@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://translate.googleapis.com/translate_a/single";
+const BASE_URL = "https://inputtools.google.com/request";
 
 /**
  * 
@@ -10,8 +10,9 @@ const BASE_URL = "https://translate.googleapis.com/translate_a/single";
  */
 export default translateAPI = async (from, to, text) => {
     try {
-        let { data } = await axios.get(`${BASE_URL}?client=gtx&sl=${from}&tl=${to}&dt=t&q=${encodeURI(text)}`);
-        data = data && data[0] && data[0][0] && data[0].map(s => s[0]).join("");
+        let { data } = await axios.get(`${BASE_URL}?text=${encodeURI(text)}&itc=${to}-t-i0-und&num=4&cp=0&cs=1&ie=utf-8&oe=utf-8&app=demopage`);
+        data = data && data[1] && data[1][0] && data[1][0][1] && data[1][0][1][0];
+        console.log(data);
         return data;
     } catch (error) {
         console.log(error.message);
