@@ -20,7 +20,7 @@ export default HomeLogic = () => {
 
     const { data, error, loading } = useSelector((state) => state.translateLanguage);
 
-    // Get data (resultText, languageSelected and text) from redux store
+    // Get data (resultText, languageSelected and text) from redux store (also from locally (if present))
     useEffect(() => {
         setRes(data && data.resultText);
         setLangSelected(data && data.toLanguage);

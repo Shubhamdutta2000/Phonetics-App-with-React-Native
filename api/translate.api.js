@@ -1,7 +1,13 @@
 import axios from "axios";
-
 const BASE_URL = "https://translate.googleapis.com/translate_a/single";
 
+/**
+ * 
+ * @param {String} from 
+ * @param {String} to 
+ * @param {String} text 
+ * @returns API for translating from English Language to specific language
+ */
 export default translateAPI = async (from, to, text) => {
     try {
         let { data } = await axios.get(`${BASE_URL}?client=gtx&sl=${from}&tl=${to}&dt=t&q=${encodeURI(text)}`);

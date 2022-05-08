@@ -5,6 +5,13 @@ import {
     GET_TRANSLATE_LANGUAGE_SUCCESS,
 } from './translate.constant';
 
+/**
+ * 
+ * @param {String} from 
+ * @param {String} to 
+ * @param {String} text 
+ * @returns Action for translating from English language to specific language
+ */
 export const translateAction = (from, to, text) => async dispatch => {
     dispatch({ type: GET_TRANSLATE_LANGUAGE_LOADING });
     try {
