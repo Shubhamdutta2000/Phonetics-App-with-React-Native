@@ -6,6 +6,10 @@ import TransliterationScreen from './screen/Transliteration/Transliteration';
 
 const Stack = createNativeStackNavigator();
 
+/**
+ * 
+ * @returns Navigation Route (Contained all Screens of the app)
+ */
 export default function Navigation() {
     return (
         <NavigationContainer>

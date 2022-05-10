@@ -7,9 +7,6 @@ import { isoLangs } from '../../utils/languages';
  * @purpose Main Logic of Home Screen
  */
 export default HomeLogic = () => {
-    const dispatch = useDispatch();
-    const [text, setText] = useState('');
-    const [res, setRes] = useState('')
     const [open, setOpen] = useState(false);
     const [langSelected, setLangSelected] = useState(data ? data.toLanguage : null);
     const [langs, setLangs] = useState(
@@ -18,33 +15,20 @@ export default HomeLogic = () => {
         })
     );
 
-    const { data, error, loading } = useSelector((state) => state.translateLanguage);
+    const { data } = useSelector((state) => state.translateLanguage);
 
-    // Get data (resultText, languageSelected and text) from redux store (also from locally (if present))
+    // Get data (languageSelected ) from redux store (also from locally (if present))
     useEffect(() => {
-        setRes(data && data.resultText);
         setLangSelected(data && data.toLanguage);
-        setText(data && data.text);
         console.log(data);
-    }, [data, res])
-
-    // translate text from English language to the particular language selected
-    const translate = async () => {
-        dispatch(translateAction("en", langSelected, text))
-    }
+    }, [data])
 
     return {
-        error,
-        loading,
-        text,
-        setText,
-        res,
         open,
         setOpen,
         langSelected,
         setLangSelected,
         langs,
         setLangs,
-        translate,
     }
 }

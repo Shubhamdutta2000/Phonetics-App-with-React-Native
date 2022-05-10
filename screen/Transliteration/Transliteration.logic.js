@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { translateAction } from '../../redux/translate/translate.actions';
-import { isoLangs } from '../../utils/languages';
 
 /**
  * @purpose Main Logic of Transliteration Screen
@@ -21,11 +20,9 @@ export default TransliterationLogic = () => {
     }, [data, res])
 
     // translate text from English language to the particular language selected
-    const handleKeyPress = async (event) => {
-        if (event.key === 'Enter') {
-            console.log('enter press here! ')
-        }
-        // dispatch(translateAction("en", langSelected, text))
+    const translate = async (langSelected) => {
+        console.log(langSelected);
+        dispatch(translateAction("en", langSelected, text))
     }
 
     return {
@@ -34,6 +31,6 @@ export default TransliterationLogic = () => {
         text,
         setText,
         res,
-        handleKeyPress,
+        translate,
     }
 }
