@@ -17,7 +17,16 @@ export default function Navigation() {
                 <Stack.Screen
                     name="Home"
                     component={HomeScreen}
-                    options={{ title: 'Phonetics App' }}
+                    options={{
+                        title: 'Phonetics App',
+                        headerStyle: {
+                            backgroundColor: '#3cb66f'
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}
                 />
                 <Stack.Screen name="Transliteration" component={TransliterationScreen} />
             </Stack.Navigator>

@@ -5,7 +5,7 @@ import HomeLogic from './Home.logic';
 import { styles } from './Home.style';
 
 /**
- *
+ * @param navigation -->  has various methods to link to other screens
  * @returns render Home Screen to the app
  */
 export default function Home({ navigation }) {

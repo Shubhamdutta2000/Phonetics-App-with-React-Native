@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { translateAction } from '../../redux/translate/translate.actions';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { isoLangs } from '../../utils/languages';
 
 /**
