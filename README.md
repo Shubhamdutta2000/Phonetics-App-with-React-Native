@@ -29,6 +29,9 @@ react-native run-android
 - redux
 - react-native-async-storage/async-storage
 - redux-persist
+- react-navigation
+- react-native-screens
+- react-native-safe-area-context
 
 <br />
 
