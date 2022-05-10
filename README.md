@@ -49,3 +49,7 @@ react-native run-android
 </table>
 
 <br />
+
+
+# License Used
+- MIT
