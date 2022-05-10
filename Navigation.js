@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screen/Home/Home';
 import TransliterationScreen from './screen/Transliteration/Transliteration';
+import { headerOption } from './utils/stackScreenHeaderOption';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,18 +18,9 @@ export default function Navigation() {
                 <Stack.Screen
                     name="Home"
                     component={HomeScreen}
-                    options={{
-                        title: 'Phonetics App',
-                        headerStyle: {
-                            backgroundColor: '#3cb66f'
-                        },
-                        headerTintColor: '#fff',
-                        headerTitleStyle: {
-                            fontWeight: 'bold',
-                        },
-                    }}
+                    options={headerOption}
                 />
-                <Stack.Screen name="Transliteration" component={TransliterationScreen} />
+                <Stack.Screen name="Transliteration" options={headerOption} component={TransliterationScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

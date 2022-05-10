@@ -34,6 +34,15 @@ react-native run-android
 
 # App Demo
 
-![AppDemo](https://user-images.githubusercontent.com/62681943/167314604-fa1475b9-0199-45df-a2db-ac1931991fd6.jpg)
+<table>
+  <tr >
+      <td align="right" valign="top">
+        <img src="https://user-images.githubusercontent.com/62681943/167692166-5effd6a2-52ae-4fe0-b5bd-9d1a05dc1577.jpg" style="vertical-align: top;" />
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/62681943/167692192-b1c3192b-7cbf-4b3b-9789-26e02af75526.jpg" />
+    </td>
+  </tr>
+</table>
 
 <br />
