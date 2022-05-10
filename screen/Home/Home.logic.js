@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { translateAction } from '../redux/translate/translate.actions';
-import { isoLangs } from '../utils/languages';
+import { translateAction } from '../../redux/translate/translate.actions';
+import { isoLangs } from '../../utils/languages';
 
 /**
  * @purpose Main Logic of Home Screen
